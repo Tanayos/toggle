@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1, user-scalable=no, width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="M'saddak Mohamed">
+<title></title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+<div class="container">
+  <h1 class="title-section">Générateur de Tiroir</h1>
+  <div class="asset-preview"></div>
+  <div class="asset-add">
+    <input type="text" class="add-title" placeholder="Titre" tabindex="1">
+    <input type="text" class="add-intro" placeholder="Intro" tabindex="2">
+    <div class="add-text-wrap">
+      <div id="toolbar" style="display: none;">
+        <a data-wysihtml-command="bold" title="CTRL+B">Gras</a>
+        <a data-wysihtml-command="italic" title="CTRL+I">Italique</a>
+        <a data-wysihtml-command="createLink">Créer lien</a>
+        <a data-wysihtml-command="removeLink">Supprimer lien</a>
+        <a data-wysihtml-action="change_view">HTML</a>
+        <div data-wysihtml-dialog="createLink" style="display: none;">
+          <label>
+            URL :
+            <input data-wysihtml-dialog-field="href" value="http://">
+          </label>
+          <a data-wysihtml-dialog-action="save" href="javascript:;">Valider</a>&nbsp;<a data-wysihtml-dialog-action="cancel" href="javascript:;">Annuler</a>
+        </div>
+      </div>
+      <div id="textarea" class="add-text" placeholder="Texte" data-placeholder="Texte" tabindex="3"></div>
+    </div>
+    <button class="add-submit">Ajouter</button>
+  </div>
+  <code class="asset-code"></code>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wysihtml/0.6.0-beta1/wysihtml.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wysihtml/0.6.0-beta1/wysihtml.all-commands.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wysihtml/0.6.0-beta1/wysihtml.toolbar.min.js"></script>
+<script src="js/simple.js"></script>
+<script src="js/script-min.js"></script>
+</body>
+</html>
